@@ -10,6 +10,8 @@ body,
 .app {
 	height: 100%;
 	width: 100%;
+  border-color: rgb(255,255,255);
+  border-width: 0.2rem;
 	font-family: "DM Sans", sans-serif;
 	@apply text-gray-500;
 }
