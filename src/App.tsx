@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./scenes/navbar";
-import Home from "./pages/Home";
 import MobileNav from "./pages/MobileNav";
 import useMediaQuery from "./hooks/useMediaQuery";
 
