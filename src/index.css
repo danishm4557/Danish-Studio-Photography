@@ -13,7 +13,7 @@ body,
   border-color: rgb(255,255,255);
   border-width: 0.2rem;
 	font-family: "DM Sans", sans-serif;
-	@apply text-gray-500;
+	color: rgb(0,0,0)
 }
 
 /* <uniquifier>: Use a unique and descriptive class name */
