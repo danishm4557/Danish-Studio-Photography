@@ -1,6 +1,8 @@
 import NavLink from './NavLink';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/Danish-Studio.svg';
+import PngLogo from '../../assets/Danish-Studio-Logo-Black.png';
+
+
 
 type Props = {
 	selectedPage:string;
@@ -23,7 +25,7 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 		<div className="flex items-center justify-end w-full p-5 text-sm">
 			<div className="flex items-center justify-center w-1/3">
 				<Link to="/" onClick={() => setSelectedPage('home')} className="flex justify-center">
-					<img src={Logo} alt="Danish Studio Photography Logo" className="w-10/12" style={{maxWidth: "125px"}} />
+					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-10/12" style={{maxWidth: "125px"}} />
 				</Link>
 			</div>
 			<div className="w-1/3 flex justify-end">
@@ -50,7 +52,7 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 			</div>
 			<div className="flex items-center justify-center w-1/3">
 				<Link to="/" onClick={() => setSelectedPage('home')} className="flex justify-center">
-					<img src={Logo} alt="Danish Studio Photography Logo" className="w-1/2" style={{maxWidth: "250px"}} />
+					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-1/2" style={{maxWidth: "250px"}} />
 				</Link>
 			</div>
 			<div className={`${flexBetween} items-end`}>
