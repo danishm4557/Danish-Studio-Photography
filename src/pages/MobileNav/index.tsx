@@ -64,7 +64,7 @@ const MobileNav = ({ selectedPage, setSelectedPage, previousPage, isAboveSmallSc
 				</div>
 			</div>
 			<div className="flex justify-center">
-				<img src={LogoWhite} alt="Danish Studio Photography Logo" className="w-10/12 border border-white p-[2px] rounded-full" style={{maxWidth: "125px"}} />
+				<img src={LogoWhite} alt="Danish Studio Photography Logo" className="w-10/12 border border-white p-[2px] rounded-full" style={{maxWidth: "150px"}} />
 			</div>
 		</motion.div>
 	}

@@ -25,7 +25,7 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 		<div className="flex items-center justify-end w-full p-5 text-sm">
 			<div className="flex items-center justify-center w-1/3">
 				<Link to="/" onClick={() => setSelectedPage('home')} className="flex justify-center">
-					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-10/12" style={{maxWidth: "125px"}} />
+					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-full border border-black p-[2px] rounded-full" style={{maxWidth: "120px"}} />
 				</Link>
 			</div>
 			<div className="w-1/3 flex justify-end">
@@ -52,7 +52,7 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 			</div>
 			<div className="flex items-center justify-center w-1/3">
 				<Link to="/" onClick={() => setSelectedPage('home')} className="flex justify-center">
-					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-1/2" style={{maxWidth: "250px"}} />
+					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-1/2 border border-black p-[2px] rounded-full" style={{maxWidth: "275px"}} />
 				</Link>
 			</div>
 			<div className={`${flexBetween} items-end`}>
