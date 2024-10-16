@@ -1,6 +1,6 @@
 import {useRef} from 'react';
 import { Link } from 'react-router-dom';
-import NavLink from '../../scenes/navbar/NavLink';
+import NavLink from '../navbar/NavLink';
 import { motion } from 'framer-motion';
 import backgroundImage from '../../assets/navigation-background-image.jpg';
 import LogoWhite from '../../assets/Danish-Studio-Logo-White.png';
