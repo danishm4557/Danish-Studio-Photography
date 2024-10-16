@@ -16,7 +16,7 @@ const Footer = ({setSelectedPage, setMobileNavIsOpen}: Props) => {
 			<div className="xs:w-8/12 sm:w-4/12 max-sm:mx-auto flex flex-col justify-between gap-7 whitespace-pre-wrap karla-300">
 				<div className="text-2xl">CHICAGO AND BEYOND</div>
 				<div className="text-xl leading-10">
-					Capturing feel good moments for the adventurous couples wherever they are.
+					Capturing feel good moments for the adventurous couples everywhere.
 				</div>
 				<div className="flex gap-5 justify-center">
 					<a href="https://www.instagram.com/danishposts/" target="_blank" className="hover:text-stone-300">

@@ -1,4 +1,3 @@
-import React from 'react'
 import followmeoninsta1 from '../../assets/followmeoninsta-1.jpeg';
 import followmeoninsta2 from '../../assets/followmeoninsta-2.jpeg';
 import followmeoninsta3 from '../../assets/followmeoninsta-3.jpeg';
