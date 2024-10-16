@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./scenes/navbar";
 import MobileNav from "./scenes/MobileNav";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Footer from "./scenes/footer";
+import Home from "./pages/Home";
 
 
 
@@ -44,12 +45,13 @@ function App() {
               setMobileNavIsOpen={setMobileNavIsOpen}
 
             />
+            <Routes>
+              {/* HOME PAGE */}
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+            </Routes>
             <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
           </>
-
-        /* <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes> */
         }
       </BrowserRouter>
     </div>

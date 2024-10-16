@@ -1,6 +1,10 @@
+import Followmeoninsta from "./followmeoninsta"
+
 const Home = () => {
   return (
-	<div>Home</div>
+    <>
+        <Followmeoninsta />
+    </>
   )
 }
 

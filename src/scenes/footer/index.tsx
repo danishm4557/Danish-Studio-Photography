@@ -9,7 +9,7 @@ type Props = {
 const Footer = ({setSelectedPage, setMobileNavIsOpen}: Props) => {
   return (
 	<>
-		<div className="flex flex-col sm:flex-row justify-between px-6 py-12 text-center text-white bg-stone-800 gap-x-[3rem] gap-y-[4.5rem]">
+		<div className="flex flex-col sm:flex-row justify-between px-6 py-12 text-center text-white bg-stone-800 gap-x-[3rem] gap-y-[4.5rem] mt-10">
 			<div className="sm:w-2/12 align-center mx-auto my-auto">
 				<img src={LogoWhite} alt="Danish Studio Photography Logo" className="w-full border border-white p-[2px] rounded-full" style={{maxWidth: '175px'}}/>
 			</div>
