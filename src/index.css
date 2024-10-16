@@ -9,21 +9,16 @@ html,
 body,
 #root,
 .app {
-  height: 100%;
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
 	width: 100%;
   border-color: rgb(255,255,255);
   border-width: 0.2rem;
 	font-family: "DM Sans", sans-serif;
 	color: rgb(0,0,0);
-  overflow: auto;
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
-
-
-/* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 200 to 800 */
 .karla-300 {
   font-family: "Karla", sans-serif;

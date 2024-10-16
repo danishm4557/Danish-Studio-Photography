@@ -39,7 +39,7 @@ const MobileNav = ({ selectedPage, setSelectedPage, previousPage, isAboveSmallSc
 			backgroundImage: `url(${backgroundImage})`,
 			backgroundSize: 'cover', // Adjust as needed
 			backgroundPosition: 'center', // Adjust as needed
-			height: '100%', // need to set default height
+			height: '97.4vh', // need to set default height
 			minHeight: 'calc(100vh-0.4rem)', // Ensure the background covers the entire viewport except custom borders set in index.css
 		  }}
 		>

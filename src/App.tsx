@@ -21,10 +21,10 @@ function App() {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState<boolean>(false);
 
   return(
-    <div className="app">
-      <BrowserRouter>
-        {
-          mobileNavIsOpen == true ?
+    <BrowserRouter>
+      {
+        mobileNavIsOpen == true ?
+        <div className="app mobile-navigation-open">
           <MobileNav
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
@@ -32,27 +32,27 @@ function App() {
             isAboveSmallScreens={isAboveSmallScreens}
             setMobileNavIsOpen={setMobileNavIsOpen}
           />
-          :
-          <>
-            <Navbar
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              setPreviousPage={setPreviousPage}
-              isAboveSmallScreens={isAboveSmallScreens}
-              isAboveMediumScreens={isAboveMediumScreens}
-              isAboveLargeScreens={isAboveLargeScreens}
-              setMobileNavIsOpen={setMobileNavIsOpen}
+        </div>
+        :
+        <div className="app">
+          <Navbar
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            setPreviousPage={setPreviousPage}
+            isAboveSmallScreens={isAboveSmallScreens}
+            isAboveMediumScreens={isAboveMediumScreens}
+            isAboveLargeScreens={isAboveLargeScreens}
+            setMobileNavIsOpen={setMobileNavIsOpen}
 
-            />
-            <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-          </>
+          />
+          <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+        </div>
 
-        /* <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes> */
-        }
-      </BrowserRouter>
-    </div>
+      /* <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes> */
+      }
+    </BrowserRouter>
   )
 }
 
