@@ -21,38 +21,38 @@ function App() {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState<boolean>(false);
 
   return(
-    <BrowserRouter>
-      {
-        mobileNavIsOpen == true ?
-        <div className="app mobile-navigation-open">
-          <MobileNav
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            previousPage={previousPage}
-            isAboveSmallScreens={isAboveSmallScreens}
-            setMobileNavIsOpen={setMobileNavIsOpen}
-          />
-        </div>
-        :
-        <div className="app">
+    <div className="app">
+      <BrowserRouter>
+        {
+          mobileNavIsOpen == true ?
+            <MobileNav
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+              previousPage={previousPage}
+              isAboveSmallScreens={isAboveSmallScreens}
+              setMobileNavIsOpen={setMobileNavIsOpen}
+            />
+          :
+          <>
           <Navbar
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            setPreviousPage={setPreviousPage}
-            isAboveSmallScreens={isAboveSmallScreens}
-            isAboveMediumScreens={isAboveMediumScreens}
-            isAboveLargeScreens={isAboveLargeScreens}
-            setMobileNavIsOpen={setMobileNavIsOpen}
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+              setPreviousPage={setPreviousPage}
+              isAboveSmallScreens={isAboveSmallScreens}
+              isAboveMediumScreens={isAboveMediumScreens}
+              isAboveLargeScreens={isAboveLargeScreens}
+              setMobileNavIsOpen={setMobileNavIsOpen}
 
-          />
-          <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-        </div>
+            />
+            <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+          </>
 
-      /* <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes> */
-      }
-    </BrowserRouter>
+        /* <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes> */
+        }
+      </BrowserRouter>
+    </div>
   )
 }
 
