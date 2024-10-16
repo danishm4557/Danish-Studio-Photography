@@ -5,9 +5,7 @@ import followmeoninsta4 from '../../assets/followmeoninsta-4.jpeg';
 import followmeoninsta5 from '../../assets/followmeoninsta-5.jpeg';
 import followmeoninsta6 from '../../assets/followmeoninsta-6.jpeg';
 
-type Props = {}
-
-const Followmeoninsta = (props: Props) => {
+const Followmeoninsta = () => {
   return (
 	<div className="flex flex-col border-red-500 gap-y-10 w-full section-padding">
 		<div className="homemade-apple-regular text-2xl md:text-3xl">Follow me on Insta</div>
