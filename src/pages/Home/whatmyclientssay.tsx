@@ -45,11 +45,11 @@ const Whatmyclientssay = () => {
 			<div className="sm:h-[100px]"></div>
 			<h1 className="anton-sc-regular italic text-4xl md:text-5xl section-padding text-nowrap">What my clients say...</h1>
 			{/* arrows */}
-			<div className="flex ml-auto pr-[1.5rem] sm:pr-[4rem]">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`size-5 ${review == 1 ? 'text-stone-400' : ''}`} onClick={() => updateReview('prev')}>
+			<div className="flex ml-auto pr-[1.5rem] sm:pr-[4rem] gap-x-2">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`size-5 ${review == 1 ? 'text-stone-400' : 'hover:cursor-pointer'}`} onClick={() => updateReview('prev')}>
 					<path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
 				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`size-5 ${review == 4 ? 'text-stone-400' : ''}`} onClick={() => updateReview('next')}>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`size-5 ${review == 4 ? 'text-stone-400' : 'hover:cursor-pointer'}`} onClick={() => updateReview('next')}>
 					<path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
 				</svg>
 			</div>
@@ -59,10 +59,10 @@ const Whatmyclientssay = () => {
 					{/* review 1 */}
 					<div className="inline-block whitespace-normal section-padding align-top">
 						<div className="font-medium uppercase mb-5">
-							"Shannon was so welcoming and comfortable to be around. She definitely knows how to make any potentially awkward situation a fun time!"
+							"Danish was so welcoming and comfortable to be around. he definitely knows how to make any potentially awkward situation a fun time!"
 						</div>
 						<div className="font-light mb-12">
-							"We are so thrilled with how above and beyond she went to make sure she got the perfect pictures of us and we are SO excited to see everything she does with them. I highly recommend her to ANYONE. She’s got a personality that will be comforting for any type of person."
+							"We are so thrilled with how above and beyond he went to make sure he got the perfect pictures of us and we are SO excited to see everything he does with them. I highly recommend him to ANYONE. he’s got a personality that will be comforting for any type of person."
 						</div>
 						<div className="homemade-apple-regular text-3xl">
 							- Christina
@@ -71,10 +71,10 @@ const Whatmyclientssay = () => {
 					{/* review 2 */}
 					<div className="inline-block whitespace-normal section-padding align-top">
 						<div className="font-medium uppercase mb-5">
-							"My fiancé Eli and I did a styled bridal shoot with Shannon and the photos turned out so great!"
+							"My fiancé Eli and I did a styled bridal shoot with Danish and the photos turned out so great!"
 						</div>
 						<div className="font-light mb-12">
-							"So great that we booked her as our wedding photographer next September. She made us feel so comfortable and had a lot of great ideas for posing— we love Shannon and her style of photography is perfection!"
+							"So great that we booked him as our wedding photographim next September. he made us feel so comfortable and had a lot of great ideas for posing— we love Danish and him style of photography is perfection!"
 						</div>
 						<div className="homemade-apple-regular text-3xl">
 							- Hailey
@@ -83,10 +83,10 @@ const Whatmyclientssay = () => {
 					{/* review 3 */}
 					<div className="inline-block whitespace-normal section-padding align-top">
 						<div className="font-medium uppercase mb-5">
-							"Not only do we love how our pictures turned out, but we had the best time with Shannon during our session!"
+							"Not only do we love how our pictures turned out, but we had the best time with Danish during our session!"
 						</div>
 						<div className="font-light mb-12">
-							"My fiancé is pretty camera-shy, but Shannon was so helpful in making us feel comfortable and giving us some guidance and we LOVE how our pictures turned out. Shannon was super flexible when scheduling as we didn't have a lot of time to do it, but she fit us in (on one of her days off) and was so incredible. She is SO easy to talk with, bubbly, and kind. If you live in or around the Chicago-land area, I would HIGHLY recommend using Shannon for a photographer!!!"
+							"My fiancé is pretty camera-shy, but Danish was so helpful in making us feel comfortable and giving us some guidance and we LOVE how our pictures turned out. Danish was super flexible when scheduling as we didn't have a lot of time to do it, but he fit us in (on one of him days off) and was so incredible. he is SO easy to talk with, bubbly, and kind. If you live in or around the Chicago-land area, I would HIGHLY recommend using Danish for a photographim!!!"
 						</div>
 						<div className="homemade-apple-regular text-3xl">
 							- Sara
@@ -95,10 +95,10 @@ const Whatmyclientssay = () => {
 					{/* review 4 */}
 					<div className="inline-block whitespace-normal section-padding align-top">
 						<div className="font-medium uppercase mb-5">
-							"Shannon did an amazing job with our session. She is so personable and makes it really fun!"
+							"Danish did an amazing job with our session. he is so personable and makes it really fun!"
 						</div>
 						<div className="font-light mb-12">
-							"My husband even had fun too! I also want to give her praise for helping me with outfits. This is something I struggle with, and she helped me make those decisions. Highly recommend! She’s got serious talent."
+							"My husband even had fun too! I also want to give him praise for helping me with outfits. This is something I struggle with, and he helped me make those decisions. Highly recommend! he’s got serious talent."
 						</div>
 						<div className="homemade-apple-regular text-3xl">
 							- Paige
