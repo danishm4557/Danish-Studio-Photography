@@ -47,8 +47,8 @@ function App() {
             />
             <Routes>
               {/* HOME PAGE */}
-              <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home setSelectedPage={setSelectedPage} />} />
+              <Route path="/home" element={<Home setSelectedPage={setSelectedPage} />} />
             </Routes>
             <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
           </>

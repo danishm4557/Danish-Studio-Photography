@@ -1,9 +1,15 @@
 import Followmeoninsta from "./followmeoninsta"
+import Welcome from "./welcome"
 import Whatmyclientssay from "./whatmyclientssay"
 
-const Home = () => {
+type Props = {
+  setSelectedPage: (value: string) => void;
+}
+
+const Home = ({setSelectedPage}:Props) => {
   return (
     <>
+        <Welcome setSelectedPage={setSelectedPage} />
         <Whatmyclientssay />
         <Followmeoninsta />
     </>
