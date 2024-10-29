@@ -97,4 +97,30 @@ body,
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+
+  .backgroundImageCarousell {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.backgroundImageCarousell {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.backgroundImageCarousell img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.backgroundImageCarousell > div > div {
+  border-radius: 0rem;
+}
+
+@media screen and (max-width: 767px) {
+  .backgroundImageCarousell {
+      height: calc(100% - 114px - 2.5rem - 5px);
+  }
 }

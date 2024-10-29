@@ -16,7 +16,7 @@ type Props = {
 
 const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallScreens, isAboveMediumScreens, isAboveLargeScreens, setMobileNavIsOpen}: Props) => {
 
-	const flexBetween: string = isAboveLargeScreens ? "flex items-center justify-between gap-8 karla-300 w-1/4" : isAboveMediumScreens ? "flex items-center justify-between gap-16 karla-300 w-1/3" : "flex flex-col justify-between gap-2 karla-300 w-1/3";
+	const flexBetween: string = isAboveLargeScreens ? "flex items-center justify-between gap-8 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-between gap-16 karla-300 w-1/3 z-10" : "flex flex-col justify-between gap-2 karla-300 w-1/3 z-10";
 
   return <>
 	{
@@ -52,7 +52,7 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 			</div>
 			<div className="flex items-center justify-center w-1/3">
 				<Link to="/" onClick={() => setSelectedPage('home')} className="flex justify-center">
-					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-1/2 border border-black p-[2px] rounded-full" style={{maxWidth: "275px"}} />
+					<img src={PngLogo} alt="Danish Studio Photography Logo" className="w-1/2 border border-black p-[2px] rounded-full z-10" style={{maxWidth: "275px"}} />
 				</Link>
 			</div>
 			<div className={`${flexBetween} items-end`}>

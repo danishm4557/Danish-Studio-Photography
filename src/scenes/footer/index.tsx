@@ -15,7 +15,7 @@ const Footer = ({setSelectedPage, setMobileNavIsOpen}: Props) => {
 			</div>
 			<div className="xs:w-8/12 sm:w-4/12 max-sm:mx-auto flex flex-col justify-between gap-7 whitespace-pre-wrap karla-300">
 				<div className="text-2xl">CHICAGO AND BEYOND</div>
-				<div className="text-xl leading-10">
+				<div className="text-lg leading-9">
 					Capturing feel good moments for the adventurous couples everywhere.
 				</div>
 				<div className="flex gap-5 justify-center">
@@ -34,7 +34,7 @@ const Footer = ({setSelectedPage, setMobileNavIsOpen}: Props) => {
 				</div>
 			</div>
 			<div className="sm:w-4/12 flex flex-col justify-start gap-9 karla-300">
-				<div className="homemade-apple-regular text-3xl">Navigation</div>
+				<div className="homemade-apple-regular text-2xl">Navigation</div>
 				<div className="flex gap-x-10 mx-auto">
 					<div className="flex flex-col gap-4">
 						<Link to="/about" onClick={() => {
