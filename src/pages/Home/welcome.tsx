@@ -10,7 +10,6 @@ const Welcome = ({setSelectedPage}: Props) => {
   return (
 	<>
 		<div className="section-padding text-center">
-			<div className="sm:h-[100px]"></div>
 			<div className="karla-300 py-6 sm:px-6 sm:w-3/4 md:w-1/2 mx-auto text-lg tracking-wider" style={{color: '#a3867d'}}>HERE FOR LIFE'S FEEL GOOD MOMENTS</div>
 			<div className="karla-300 py-6 sm:px-6 sm:w-3/4 md:w-1/2 mx-auto tracking-wide leading-9">Wherever your adventures take you, I’m here to capture every moment big and small. Let’s do this.</div>
 			<div className="sm:h-[100px]"></div>

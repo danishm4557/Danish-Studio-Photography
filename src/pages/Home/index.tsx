@@ -5,13 +5,14 @@ import Whatmyclientssay from "./whatmyclientssay"
 
 type Props = {
   setSelectedPage: (value: string) => void;
+  setCarouselImageColor: (value: string) => void;
 }
 
-const Home = ({setSelectedPage}:Props) => {
+const Home = ({setSelectedPage, setCarouselImageColor}:Props) => {
   return (
     <>
         <div className="hidden sm:block w-[100%] h-[100%]"></div>
-        <BackgroundImageCarousel />
+        <BackgroundImageCarousel setCarouselImageColor={setCarouselImageColor} />
         <Welcome setSelectedPage={setSelectedPage} />
         <Whatmyclientssay />
         <Followmeoninsta />

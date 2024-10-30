@@ -5,15 +5,13 @@ type Props = {
   selectedPage:string;
   setSelectedPage:(value:string) => void;
   setMobileNavIsOpen:(value:boolean) => void;
-  carouselImageColor:string;
 }
 
-const NavLink = ({
+const MobileNavLink = ({
   page,
   selectedPage,
   setSelectedPage,
-  setMobileNavIsOpen,
-  carouselImageColor
+  setMobileNavIsOpen
 }: Props) => {
 
   const lowerCasePage = page.toLowerCase().replace(/ /g, "");
@@ -25,11 +23,11 @@ const NavLink = ({
         setSelectedPage(lowerCasePage);
         setMobileNavIsOpen(false);
       }}
-      className={`${carouselImageColor == "black" ? "text-white" : "text-black"} ${selectedPage == lowerCasePage ? "border-b-2" : ""}`}
+      className={`${selectedPage == lowerCasePage ? "border-b-2" : ""} px-5 py-3 bg-amber-50 w-fit text-black text-sm tracking-widest opacity-85`}
       >
         {page}
     </Link>
   )
 }
 
-export default NavLink;
+export default MobileNavLink;

@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 function App() {
 
   // viewports
-  const isAboveSmallScreens = useMediaQuery("(min-width: 600px)");
+  const isAboveSmallScreens = useMediaQuery("(min-width: 767px)");
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 	const isAboveLargeScreens = useMediaQuery("(min-width: 1200px)");
 
@@ -20,6 +20,10 @@ function App() {
   const [previousPage, setPreviousPage] = useState<string>('home');
 
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState<boolean>(false);
+
+  // set nav color (black or white) based off carousel image coloring
+  const [carouselImageColor, setCarouselImageColor] = useState('black');
+
 
   return(
     <div className="app">
@@ -43,12 +47,12 @@ function App() {
               isAboveMediumScreens={isAboveMediumScreens}
               isAboveLargeScreens={isAboveLargeScreens}
               setMobileNavIsOpen={setMobileNavIsOpen}
-
+              carouselImageColor={carouselImageColor}
             />
             <Routes>
               {/* HOME PAGE */}
-              <Route path="/" element={<Home setSelectedPage={setSelectedPage} />} />
-              <Route path="/home" element={<Home setSelectedPage={setSelectedPage} />} />
+              <Route path="/" element={<Home setSelectedPage={setSelectedPage} setCarouselImageColor={setCarouselImageColor} />} />
+              <Route path="/home" element={<Home setSelectedPage={setSelectedPage} setCarouselImageColor={setCarouselImageColor} />} />
             </Routes>
             <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
           </>

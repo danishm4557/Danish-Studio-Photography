@@ -1,6 +1,6 @@
 import {useRef} from 'react';
 import { Link } from 'react-router-dom';
-import NavLink from '../navbar/NavLink';
+import MobileNavLink from './MobileNavLink';
 import { motion } from 'framer-motion';
 import backgroundImage from '../../assets/navigation-background-image.jpg';
 import LogoWhite from '../../assets/Danish-Studio-Logo-White.png';
@@ -45,12 +45,12 @@ const MobileNav = ({ selectedPage, setSelectedPage, previousPage, isAboveSmallSc
 		>
 			<div className="flex justify-between">
 				<div className="flex flex-col gap-2">
-					<NavLink page="ABOUT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<NavLink page="WELCOME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<NavLink page="INVESTMENT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<NavLink page="BLOG" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<NavLink page="BOOK ME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<NavLink page="GALLERY" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="ABOUT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="WELCOME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="INVESTMENT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="BLOG" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="BOOK ME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="GALLERY" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
 				</div>
 				<div className="flex justify-end w-3/12">
 					<Link id="mobile-nav-close-btn p-4" className="w-1/2 flex justify-end bg-amber-50 px-5 py-3 opacity-85" style={{height: 'fit-content', width: 'fit-content'}} to={`/${previousPage}`} ref={closeButtonRef} onClick={() => {
