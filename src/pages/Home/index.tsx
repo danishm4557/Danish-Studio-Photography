@@ -1,4 +1,5 @@
 import { BackgroundImageCarousel } from "./backgroundImageCarousel";
+import BeautifulPlaceImage from "./beautifulPlaceImage";
 import Followmeoninsta from "./followmeoninsta"
 import Welcome from "./welcome"
 import Whatmyclientssay from "./whatmyclientssay"
@@ -14,6 +15,7 @@ const Home = ({setSelectedPage, setCarouselImageColor}:Props) => {
         <div className="hidden sm:block w-[100%] h-[100%]"></div>
         <BackgroundImageCarousel setCarouselImageColor={setCarouselImageColor} />
         <Welcome setSelectedPage={setSelectedPage} />
+        <BeautifulPlaceImage />
         <Whatmyclientssay />
         <Followmeoninsta />
     </>

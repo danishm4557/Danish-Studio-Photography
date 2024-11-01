@@ -25,11 +25,11 @@ export function BackgroundImageCarousel({setCarouselImageColor}: Props) {
     else {
       setCarouselImageColor('white');
     }
-  }, [imageIndex])
+  }, [imageIndex, setCarouselImageColor])
 
   return (
     <div className="backgroundImageCarousell border-8 border-white">
-      <Carousel slideInterval={5000} onSlideChange={(index) => [setImageIndex(index), console.log('onSlideChange()', imageIndex)]}>
+      <Carousel slideInterval={5000} onSlideChange={(index) => setImageIndex(index)}>
         <img src={homePageCarouselImage1} alt="Home Page Carousel Image 1" />
         <img src={homePageCarouselImage2} alt="Home Page Carousel Image 2" />
         <img src={homePageCarouselImage3} alt="Home Page Carousel Image 3" />

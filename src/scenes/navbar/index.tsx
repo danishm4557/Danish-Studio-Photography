@@ -22,11 +22,12 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 	const flexBetween: string = isAboveLargeScreens ? "flex items-center justify-between gap-8 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-between gap-16 karla-300 w-1/3 z-10" : "flex flex-col justify-between gap-2 karla-300 w-1/3 z-10";
 
 	const navLinkTransition = {
-		hidden: { opacity: 0 },
+		hidden: { opacity: 0, scale: 0.85 },
 		show: {
 		  opacity: 1,
+		  scale: 1,
 		  transition: {
-			duration: 2
+			duration: 1
 		  }
 		}
 	  }

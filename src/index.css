@@ -124,3 +124,13 @@ body,
       height: calc(100% - 114px - 2.5rem - 5px);
   }
 }
+
+#beautifulPlaceContainerDiv {
+  background-image: url("../src/assets/beautifulPlaceImage.jpg");
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
