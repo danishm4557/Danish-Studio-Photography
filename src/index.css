@@ -127,10 +127,10 @@ body,
 
 #beautifulPlaceContainerDiv {
   background-image: url("../src/assets/beautifulPlaceImage.jpg");
-  min-height: 100%;
+  min-height: 100% !important;
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }

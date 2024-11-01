@@ -35,7 +35,7 @@ const Welcome = ({setSelectedPage}: Props) => {
 					And I’m so freakin pumped you’re here!!!! I’m a midwest photographer based out of Chicago, IL. I’ll travel just about anywhere for some good laughs + tacos!
 				</p>
 				<p className="karla-300 tracking-wide leading-7 mt-5">
-					My mission as photographer is to capture real, authentic images that will leave you speechless now and many years to come. You can take a load off knowing your go-to-gal has got this covered!
+					My mission as photographer is to capture real, authentic images that will leave you speechless now and many years to come. You can take a load off knowing your go-to-photographer has got this covered!
 				</p>
 				<p className="karla-300 tracking-wide mt-5">
 					So you ready to make some magic?
