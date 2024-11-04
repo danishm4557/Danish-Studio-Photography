@@ -90,6 +90,15 @@ body,
   padding: 1.5rem;
 }
 
+#beautifulPlaceContainerDiv {
+  background-image: url("../src/assets/beautifulPlaceImage.jpg");
+  min-height: 100% !important;
+  /* Create the parallax scrolling effect */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 @media screen and (min-width: 768px){
   .section-padding {
     padding-left: 4rem;
@@ -101,6 +110,16 @@ body,
   .backgroundImageCarousell {
     position: absolute;
     top: 0;
+  }
+
+  #beautifulPlaceContainerDiv {
+    background-image: url("../src/assets/beautifulPlaceImage.jpg");
+    min-height: 100% !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
   }
 }
 
@@ -119,27 +138,8 @@ body,
   border-radius: 0rem;
 }
 
-#beautifulPlaceContainerDiv {
-  background-image: url("../src/assets/beautifulPlaceImage.jpg");
-  min-height: 100% !important;
-  /* Create the parallax scrolling effect */
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-
 @media screen and (max-width: 767px) {
   .backgroundImageCarousell {
       height: calc(100% - 114px - 2.5rem - 5px);
-  }
-
-  #beautifulPlaceContainerDiv {
-    background-image: url("../src/assets/beautifulPlaceImage.jpg");
-    min-height: 100% !important;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
   }
 }
