@@ -123,12 +123,6 @@ body,
 
 /* desktop screens */
 @media screen and (min-width: 768px){
-  /* .navbar-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-  } */
-
   .section-padding {
     padding-left: 4rem;
     padding-right: 4rem;

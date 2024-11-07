@@ -1,4 +1,3 @@
-import React from 'react'
 import InvestmentTextBlock from './investmentTextBlock';
 import TheProcess from './theProcess';
 import Faq from './faq';
