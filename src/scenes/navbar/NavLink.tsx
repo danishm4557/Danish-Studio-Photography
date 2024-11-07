@@ -2,18 +2,16 @@ import { Link } from 'react-router-dom';
 
 type Props = {
   page:string;
-  selectedPage:string;
   setSelectedPage:(value:string) => void;
   setMobileNavIsOpen:(value:boolean) => void;
-  carouselImageColor:string;
+  backgroundImageColor:string;
 }
 
 const NavLink = ({
   page,
-  selectedPage,
   setSelectedPage,
   setMobileNavIsOpen,
-  carouselImageColor
+  backgroundImageColor
 }: Props) => {
 
   const lowerCasePage = page.toLowerCase().replace(/ /g, "");
@@ -25,7 +23,7 @@ const NavLink = ({
         setSelectedPage(lowerCasePage);
         setMobileNavIsOpen(false);
       }}
-      className={`${carouselImageColor == "black" ? "text-white" : "text-black"} ${selectedPage == lowerCasePage ? "border-b-2" : ""}`}
+      className={`${backgroundImageColor == "black" ? "text-white" : "text-black"}`}
       >
         {page}
     </Link>

@@ -63,7 +63,6 @@ body,
   font-style: normal;
 }
 
-
 /* <uniquifier>: Use a unique and descriptive class name
 <weight>: Use a value from 300 to 700 */
 .cormorant-600 {
@@ -84,8 +83,6 @@ body,
   font-weight: 400;
 }
 
-
-
 .section-padding {
   padding: 1.5rem;
 }
@@ -99,7 +96,39 @@ body,
   background-size: cover !important;
 }
 
+#investmentLandingPageImageDiv {
+  background-image: url("../src/assets/investmentLandingPageImage.jpg");
+  min-height: 100vh !important;
+  /* Create the parallax scrolling effect */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+#bookmeLandingPageImageDiv {
+  background-image: url("../src/assets/bookmeLandingPageImage.jpg");
+  min-height: 100vh !important;
+  /* Create the parallax scrolling effect */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.navbar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10 !important;
+}
+
+/* desktop screens */
 @media screen and (min-width: 768px){
+  /* .navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
+
   .section-padding {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -121,12 +150,32 @@ body,
     background-repeat: no-repeat !important;
     background-size: cover !important;
   }
+
+  #investmentLandingPageImageDiv {
+    background-image: url("../src/assets/investmentLandingPageImage.jpg");
+    min-height: 100vh !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  #bookmeLandingPageImageDiv {
+    background-image: url("../src/assets/bookmeLandingPageImage.jpg");
+    min-height: 100vh !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
 }
 
 .backgroundImageCarousell {
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 .backgroundImageCarousell img {
@@ -138,6 +187,7 @@ body,
   border-radius: 0rem;
 }
 
+/* mobile screens */
 @media screen and (max-width: 767px) {
   .backgroundImageCarousell {
       height: calc(100% - 114px - 2.5rem - 5px);

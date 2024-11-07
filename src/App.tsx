@@ -5,6 +5,8 @@ import MobileNav from "./scenes/MobileNav";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Footer from "./scenes/footer";
 import Home from "./pages/Home";
+import Investment from "./pages/Investment";
+import LandingPageImage from "./scenes/LandingPageImage";
 
 
 
@@ -21,12 +23,21 @@ function App() {
 
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState<boolean>(false);
 
-  // set nav color (black or white) based off carousel image coloring
-  const [carouselImageColor, setCarouselImageColor] = useState('black');
+  // set nav color (black or white) based off homepage carousel or other pages' background image coloring
+  const [backgroundImageColor, setbackgroundImageColor] = useState('black');
 
 
   return(
     <div className="app">
+      {
+        selectedPage == 'investment' ?
+          <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
+        :
+        selectedPage == 'bookme' ?
+          <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
+        :
+          ''
+      }
       <BrowserRouter>
         {
           mobileNavIsOpen == true ?
@@ -47,12 +58,14 @@ function App() {
               isAboveMediumScreens={isAboveMediumScreens}
               isAboveLargeScreens={isAboveLargeScreens}
               setMobileNavIsOpen={setMobileNavIsOpen}
-              carouselImageColor={carouselImageColor}
+              backgroundImageColor={backgroundImageColor}
+              setbackgroundImageColor={setbackgroundImageColor}
             />
             <Routes>
               {/* HOME PAGE */}
-              <Route path="/" element={<Home setSelectedPage={setSelectedPage} setCarouselImageColor={setCarouselImageColor} />} />
-              <Route path="/home" element={<Home setSelectedPage={setSelectedPage} setCarouselImageColor={setCarouselImageColor} />} />
+              <Route path="/" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
+              <Route path="/home" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
+              <Route path="/investment" element={<Investment setSelectedPage={setSelectedPage} />} />
             </Routes>
             <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
           </>
