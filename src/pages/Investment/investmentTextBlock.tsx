@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-const InvestmentTextBlock = (props: Props) => {
+const InvestmentTextBlock = () => {
   return (
 	<>
 		<div className="section-padding text-center" style={{backgroundColor: '#f6f2ef'}}>
