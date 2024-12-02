@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import investmentDanishStudioPhoto from '../../assets/investment-danish-studio.png'
+import investmentDanishStudioPhoto from '../../assets/danish-studio-photography.png'
 
 const Faq = () => {
 
@@ -9,10 +9,10 @@ const Faq = () => {
 	const answer3 = useRef<HTMLDivElement>(null);
 	const answer4 = useRef<HTMLDivElement>(null);
 
-	const [question1Operator, setQuestion1Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
-	const [question2Operator, setQuestion2Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
-	const [question3Operator, setQuestion3Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
-	const [question4Operator, setQuestion4Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
+	const [question1Operator, setQuestion1Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
+	const [question2Operator, setQuestion2Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
+	const [question3Operator, setQuestion3Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
+	const [question4Operator, setQuestion4Operator] = useState(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>)
 
 
 
@@ -21,7 +21,7 @@ const Faq = () => {
 			setQuestion1Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" /></svg>);
 		}
 		else {
-			setQuestion1Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
+			setQuestion1Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
 		}
 		answer1.current?.classList.toggle('hidden');
 	}
@@ -30,7 +30,7 @@ const Faq = () => {
 			setQuestion2Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" /></svg>);
 		}
 		else {
-			setQuestion2Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
+			setQuestion2Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
 		}
 		answer2.current?.classList.toggle('hidden');
 	}
@@ -39,7 +39,7 @@ const Faq = () => {
 			setQuestion3Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" /></svg>);
 		}
 		else {
-			setQuestion3Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
+			setQuestion3Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
 		}
 		answer3.current?.classList.toggle('hidden');
 	}
@@ -48,7 +48,7 @@ const Faq = () => {
 			setQuestion4Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" /></svg>);
 		}
 		else {
-			setQuestion4Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 font-light"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
+			setQuestion4Operator(<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 font-light"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>);
 		}
 		answer4.current?.classList.toggle('hidden');
 	}

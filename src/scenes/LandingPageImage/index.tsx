@@ -5,8 +5,11 @@ type Props = {
 
 const LandingPageImage = ({selectedPage, setbackgroundImageColor}: Props) => {
 
-	if (selectedPage == 'investment' || selectedPage == 'bookme') {
+	if (selectedPage == 'investment') {
 		setbackgroundImageColor('black');
+	}
+	else if (selectedPage == 'bookme') {
+		setbackgroundImageColor('white');
 	}
 
   return (

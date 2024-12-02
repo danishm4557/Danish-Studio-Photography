@@ -45,10 +45,10 @@ const MobileNav = ({ selectedPage, setSelectedPage, previousPage, isAboveSmallSc
 		>
 			<div className="flex justify-between">
 				<div className="flex flex-col gap-2">
-					<MobileNavLink page="ABOUT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					{/* <MobileNavLink page="ABOUT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} /> */}
 					<MobileNavLink page="WELCOME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
 					<MobileNavLink page="INVESTMENT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<MobileNavLink page="BLOG" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					{/* <MobileNavLink page="BLOG" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} /> */}
 					<MobileNavLink page="BOOK ME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
 					<MobileNavLink page="GALLERY" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
 				</div>

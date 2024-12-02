@@ -114,10 +114,14 @@ body,
   background-size: cover !important;
 }
 
-.navbar-container {
+.navbar-container-position-absolute {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10 !important;
+}
+.navbar-container-position-relative {
+  position: relative;
   z-index: 10 !important;
 }
 
@@ -182,8 +186,8 @@ body,
 }
 
 /* mobile screens */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .backgroundImageCarousell {
       height: calc(100% - 114px - 2.5rem - 5px);
   }
-}
+} */

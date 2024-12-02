@@ -7,6 +7,9 @@ import Footer from "./scenes/footer";
 import Home from "./pages/Home";
 import Investment from "./pages/Investment";
 import LandingPageImage from "./scenes/LandingPageImage";
+import BookMe from "./pages/BookMe";
+import FAQ from "./pages/FAQ";
+import Pricing from "./pages/Pricing";
 
 
 
@@ -65,7 +68,11 @@ function App() {
               {/* HOME PAGE */}
               <Route path="/" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
               <Route path="/home" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
+              <Route path="/welcome" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
               <Route path="/investment" element={<Investment setSelectedPage={setSelectedPage} />} />
+              <Route path="/bookme" element={<BookMe setSelectedPage={setSelectedPage} />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/pricing" element={<Pricing />} />
             </Routes>
             <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
           </>

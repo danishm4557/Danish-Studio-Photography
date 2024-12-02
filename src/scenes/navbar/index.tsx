@@ -20,7 +20,11 @@ type Props = {
 
 const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallScreens, isAboveMediumScreens, isAboveLargeScreens, setMobileNavIsOpen, backgroundImageColor, setbackgroundImageColor}: Props) => {
 
-	const flexBetween: string = isAboveLargeScreens ? "flex items-center justify-between gap-8 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-between gap-16 karla-300 w-1/3 z-10" : "flex flex-col justify-between gap-2 karla-300 w-1/3 z-10";
+	// const firstLinkGroupFlexBetween: string = isAboveLargeScreens ? "flex items-center justify-start gap-8 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-start gap-16 karla-300 w-1/3 z-10" : "flex flex-col justify-start gap-2 karla-300 w-1/3 z-10";
+	// const secondLinkGroupFlexBetween: string = isAboveLargeScreens ? "flex items-center justify-end gap-8 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-end gap-16 karla-300 w-1/3 z-10" : "flex flex-col justify-end gap-2 karla-300 w-1/3 z-10";
+	const firstLinkGroupFlexBetween: string = isAboveLargeScreens ? "flex items-center justify-center gap-20 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-start gap-16 karla-300 w-1/4 z-10" : isAboveSmallScreens ? "flex items-center justify-start gap-12 karla-300 w-1/4 z-10" : "flex flex-col justify-start gap-2 karla-300 w-1/3 z-10";
+	const secondLinkGroupFlexBetween: string = isAboveLargeScreens ? "flex items-center justify-center gap-20 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-end gap-16 karla-300 w-1/4 z-10" : isAboveSmallScreens ? "flex items-center justify-end gap-12 karla-300 w-1/4 z-10" : "flex flex-col justify-end gap-2 karla-300 w-1/3 z-10";
+
 
 	const navLinkTransition = {
 		hidden: { opacity: 0, scale: 0.85 },
@@ -33,11 +37,13 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 		}
 	  }
 
+	const navbarContainer = selectedPage == 'faq' ? 'navbar-container-position-relative' : selectedPage == 'pricing' ? 'navbar-container-position-relative' : 'navbar-container-position-absolute';
+
   return <>
 	{
 		// MOBILE NAV
 		!isAboveSmallScreens ?
-		<div className="navbar-container flex items-center justify-end w-full p-5 text-sm">
+		<div className={`${navbarContainer} flex items-center justify-end w-full p-5 text-sm`}>
 			<div className="flex items-center justify-center w-1/3">
 				<Link to="/" onClick={() => setSelectedPage('home')} className="flex justify-center">
 					{
@@ -63,12 +69,12 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 		</div>
 		:
 		// WVP NAV
-		<div className={`navbar-container flex items-center justify-between w-full px-14 py-7 text-sm gap-3`}>
-			<motion.div className={`${flexBetween} items-start`}
+		<div className={`${navbarContainer} flex items-center justify-between w-full px-14 py-7 text-sm gap-3`}>
+			<motion.div className={`${firstLinkGroupFlexBetween} items-start`}
 			variants={navLinkTransition}
     		initial="hidden"
     		animate="show">
-				<NavLink page="ABOUT" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
+				{/* <NavLink page="ABOUT" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} /> */}
 				<NavLink page="WELCOME" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
 				<NavLink page="INVESTMENT" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
 			</motion.div>
@@ -88,11 +94,11 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 					}
 				</Link>
 			</div>
-			<motion.div className={`${flexBetween} items-end`}
+			<motion.div className={`${secondLinkGroupFlexBetween} items-end`}
 			variants={navLinkTransition}
     		initial="hidden"
     		animate="show">
-				<NavLink page="BLOG" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
+				{/* <NavLink page="BLOG" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} /> */}
 				<NavLink page="BOOK ME" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
 				<NavLink page="GALLERY" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
 			</motion.div>
