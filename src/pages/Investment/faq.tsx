@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import investmentDanishStudioPhoto from '../../assets/danish-studio-photography.png'
+import { motion } from 'framer-motion';
 
 const Faq = () => {
 
@@ -58,22 +59,46 @@ const Faq = () => {
 		<div className="flex flex-col sm:w-1/2 font-light tracking-wider">
 			<div className="text-start homemade-apple-regular text-3xl my-12 font-light tracking-widest">FAQ</div>
 			<div className="flex flex-col">
-				<div className="border-b-2 py-10">
-					<div onClick={() => showHideFaq1()} className="flex cursor-pointer">{question1Operator}<span className="pl-2">WHAT'S YOUR TURNAROUND TIME?</span></div>
+				<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 0.3, delay: 0, ease: "linear" }}
+				className="border-b-2 py-10">
+					<div onClick={() => showHideFaq1()} className="flex cursor-pointer">
+						{question1Operator}<span className="pl-2">WHAT'S YOUR TURNAROUND TIME?</span>
+					</div>
 					<div className="pt-5 hidden" ref={answer1}>You’ll receive all your pretty photos 6-8 weeks after you’ve said "I Do"! Engagement/couples sessions have a two week turnaround time.</div>
-				</div>
-				<div className="border-b-2 py-10">
-					<div onClick={() => showHideFaq2()} className="flex cursor-pointer">{question2Operator}<span className="pl-2">HOW MANY PHOTOS WILL I RECEIVE?</span></div>
+				</motion.div>
+				<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 0.3, delay: 0.3, ease: "linear" }}
+				className="border-b-2 py-10">
+					<div onClick={() => showHideFaq2()} className="flex cursor-pointer">
+						{question2Operator}<span className="pl-2">HOW MANY PHOTOS WILL I RECEIVE?</span>
+					</div>
 					<div className="pt-5 hidden" ref={answer2}>On average, we deliver around 1,200 images for weddings & 100 images for regular sessions.</div>
-				</div>
-				<div className="border-b-2 py-10">
-					<div onClick={() => showHideFaq3()} className="flex cursor-pointer">{question3Operator}<span className="pl-2">DO YOU TRAVEL?</span></div>
+				</motion.div>
+				<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 0.3, delay: 0.6, ease: "linear" }}
+				className="border-b-2 py-10">
+					<div onClick={() => showHideFaq3()} className="flex cursor-pointer">
+						{question3Operator}<span className="pl-2">DO YOU TRAVEL?</span>
+					</div>
 					<div className="pt-5 hidden" ref={answer3}>YES YES! 100x YES!!! If you’re there, I’m there.</div>
-				</div>
-				<div className="py-10">
-					<div onClick={() => showHideFaq4()} className="flex cursor-pointer">{question4Operator}<span className="pl-2">DO YOU OFFER CUSTOM PACKAGES?</span></div>
+				</motion.div>
+				<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 0.3, delay: 0.9, ease: "linear" }}
+				className="py-10">
+					<div onClick={() => showHideFaq4()} className="flex cursor-pointer">
+						{question4Operator}<span className="pl-2">DO YOU OFFER CUSTOM PACKAGES?</span>
+					</div>
 					<div className="pt-5 hidden" ref={answer4}>Sure do! We understand that every wedding is unique & might not fit the packages offered. We will work with you to create a package that best fits your needs!</div>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 		<div className="sm:w-1/2">

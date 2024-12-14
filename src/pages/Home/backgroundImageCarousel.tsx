@@ -11,21 +11,21 @@ import homePageCarouselImage9 from '../../assets/homePageCarouselImage9.jpeg';
 import { useEffect, useState } from "react";
 
 type Props = {
-  setbackgroundImageColor: (value: string) => void;
+  setCarouselImageColor: (value: string) => void;
 }
 
-export function BackgroundImageCarousel({setbackgroundImageColor}: Props) {
+export function BackgroundImageCarousel({setCarouselImageColor}: Props) {
 
   const [imageIndex, setImageIndex] = useState(1);
 
-  useEffect(() => {
-    if (imageIndex % 2 == 0) {
-      setbackgroundImageColor('black');
-    }
-    else {
-      setbackgroundImageColor('white');
-    }
-  }, [imageIndex, setbackgroundImageColor])
+  // useEffect(() => {
+  //   if (imageIndex % 2 == 0) {
+  //     setCarouselImageColor('black');
+  //   }
+  //   else {
+  //     setCarouselImageColor('white');
+  //   }
+  // }, [imageIndex, setCarouselImageColor])
 
   return (
     <div className="backgroundImageCarousell border-8 border-white">

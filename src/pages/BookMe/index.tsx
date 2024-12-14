@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import bookmeImage1 from '../../assets/bookmeImage1.png';
 import bookmeImage2 from '../../assets/bookmeImage2.png';
 import Followmeoninsta from '../Home/followmeoninsta';
+import ContactForm from './contactForm';
 
 type Props = {
 	setSelectedPage: (value: string) => void;
@@ -19,6 +20,7 @@ const BookMe = ({setSelectedPage}:Props) => {
 				<div className="flex flex-col gap-8 text-center">
 					<div className="anton-sc-regular italic text-4xl md:text-5xl text-stone-800 tracking-widest" style={{lineHeight: '3.5rem'}}>Heck yesss,<br />you made it here!</div>
 					<div className="font-light leading-9 tracking-widest">Things must be getting serious ;))) If you haven’t already, head over  to <Link to={`/pricing`} onClick={() => setSelectedPage('pricing')}><span className="border-b-2 border-stone-300 hover:border-stone-400">view my pricing</span></Link> and <Link to={`/faq`} onClick={() => setSelectedPage('faq')}><span className="border-b-2 border-stone-300 hover:border-stone-400">FAQ</span></Link> before inquiring! I’m so freaking pumped to chat with you about all your photography needs, friends! Please allow 24 - 48 hours for a response.</div>
+					<ContactForm />
 				</div>
 			</div>
 		</div>
