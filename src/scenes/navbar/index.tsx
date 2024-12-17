@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 
 type Props = {
 	selectedPage:string;
-	setSelectedPage:(value:string) => void;
 	setPreviousPage:(value:string) => void;
 	isAboveSmallScreens:boolean;
 	isAboveMediumScreens:boolean;
@@ -18,7 +17,7 @@ type Props = {
 	setbackgroundImageColor:(value:string) => void;
 }
 
-const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallScreens, isAboveMediumScreens, isAboveLargeScreens, setMobileNavIsOpen, backgroundImageColor, setbackgroundImageColor}: Props) => {
+const Navbar = ({ selectedPage, setPreviousPage, isAboveSmallScreens, isAboveMediumScreens, isAboveLargeScreens, setMobileNavIsOpen, backgroundImageColor, setbackgroundImageColor}: Props) => {
 
 	// const firstLinkGroupFlexBetween: string = isAboveLargeScreens ? "flex items-center justify-start gap-8 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-start gap-16 karla-300 w-1/3 z-10" : "flex flex-col justify-start gap-2 karla-300 w-1/3 z-10";
 	// const secondLinkGroupFlexBetween: string = isAboveLargeScreens ? "flex items-center justify-end gap-8 karla-300 w-1/4 z-10" : isAboveMediumScreens ? "flex items-center justify-end gap-16 karla-300 w-1/3 z-10" : "flex flex-col justify-end gap-2 karla-300 w-1/3 z-10";
@@ -45,7 +44,7 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 		!isAboveSmallScreens ?
 		<div className={`${navbarContainer} flex items-center justify-end w-full p-5 text-sm`}>
 			<div className="flex items-center justify-center w-1/3">
-				<Link to="/" onClick={() => setSelectedPage('home')} className="flex justify-center">
+				<Link to="/" className="flex justify-center">
 					{
 						backgroundImageColor == 'black' ?
 						<img src={PngLogoWhite} alt="Danish Studio Photography Logo" className="w-full border border-white p-[2px] rounded-full" style={{maxWidth: "120px"}} />
@@ -57,7 +56,6 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
 			<div className="w-1/3 flex justify-end">
 				<Link to="/navigation" onClick={() => {
 					setPreviousPage(selectedPage);
-					setSelectedPage('navigation');
 					setMobileNavIsOpen(true);
 				}
 				}>
@@ -75,11 +73,11 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
     		initial="hidden"
     		animate="show">
 				{/* <NavLink page="ABOUT" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} /> */}
-				<NavLink page="WELCOME" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
-				<NavLink page="INVESTMENT" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
+				<NavLink page="WELCOME" setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
+				<NavLink page="INVESTMENT" setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
 			</motion.div>
 			<div className="flex items-center justify-center w-1/3">
-				<Link to="/" onClick={() => [setSelectedPage('home'), setbackgroundImageColor('black')]} className="flex justify-center">
+				<Link to="/" onClick={() => setbackgroundImageColor('black')} className="flex justify-center">
 					{
 						backgroundImageColor == 'black' ?
 						<motion.img variants={navLinkTransition}
@@ -99,8 +97,8 @@ const Navbar = ({ selectedPage, setSelectedPage, setPreviousPage, isAboveSmallSc
     		initial="hidden"
     		animate="show">
 				{/* <NavLink page="BLOG" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} /> */}
-				<NavLink page="BOOK ME" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
-				<NavLink page="GALLERY" setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
+				<NavLink page="BOOK ME" setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
+				<NavLink page="GALLERY" setMobileNavIsOpen={setMobileNavIsOpen} backgroundImageColor={backgroundImageColor} />
 			</motion.div>
 		</div>
 	}

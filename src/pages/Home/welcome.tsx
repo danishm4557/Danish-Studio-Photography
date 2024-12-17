@@ -2,11 +2,7 @@ import danishProfileIntro from '../../assets/danish-profile-intro.png';
 import { Link } from 'react-router-dom';
 import ZoomImage from '../../hooks/zoomImage';
 
-type Props = {
-	setSelectedPage: (value: string) => void;
-}
-
-const Welcome = ({setSelectedPage}: Props) => {
+const Welcome = () => {
   return (
 	<>
 		<div className="section-padding text-center">
@@ -40,7 +36,7 @@ const Welcome = ({setSelectedPage}: Props) => {
 				<p className="karla-300 tracking-wide mt-5">
 					So you ready to make some magic?
 				</p>
-				<Link to={`/bookme`} onClick={() => setSelectedPage('bookme')}>
+				<Link to={`/bookme`}>
 					<button className="karla-300 text-sm tracking-[0.5rem] rounded-sm text-white bg-yellow-800 hover:bg-opacity-85 mt-10 p-3">
 						LET'S DO THIS
 					</button>

@@ -7,7 +7,6 @@ import LogoWhite from '../../assets/Danish-Studio-Logo-White.png';
 
 
 type Props = {
-	selectedPage:string;
 	setSelectedPage:(value:string) => void;
 	previousPage:string;
 	isAboveSmallScreens:boolean;
@@ -15,12 +14,13 @@ type Props = {
 }
 
 
-const MobileNav = ({ selectedPage, setSelectedPage, previousPage, isAboveSmallScreens, setMobileNavIsOpen }: Props) => {
+const MobileNav = ({ setSelectedPage, previousPage, isAboveSmallScreens, setMobileNavIsOpen }: Props) => {
+
+	setSelectedPage('navigation');
 
 	const closeButtonRef = useRef<HTMLAnchorElement>(null);
 
 	const closeMobileNav = () => {
-		setSelectedPage(previousPage);
 		setMobileNavIsOpen(false);
 	}
 
@@ -46,11 +46,11 @@ const MobileNav = ({ selectedPage, setSelectedPage, previousPage, isAboveSmallSc
 			<div className="flex justify-between">
 				<div className="flex flex-col gap-2">
 					{/* <MobileNavLink page="ABOUT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} /> */}
-					<MobileNavLink page="WELCOME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<MobileNavLink page="INVESTMENT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					{/* <MobileNavLink page="BLOG" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} /> */}
-					<MobileNavLink page="BOOK ME" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
-					<MobileNavLink page="GALLERY" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="WELCOME" setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="INVESTMENT" setMobileNavIsOpen={setMobileNavIsOpen} />
+					{/* <MobileNavLink page="BLOG" setMobileNavIsOpen={setMobileNavIsOpen} /> */}
+					<MobileNavLink page="BOOK ME" setMobileNavIsOpen={setMobileNavIsOpen} />
+					<MobileNavLink page="GALLERY" setMobileNavIsOpen={setMobileNavIsOpen} />
 				</div>
 				<div className="flex justify-end w-3/12">
 					<Link id="mobile-nav-close-btn p-4" className="w-1/2 flex justify-end bg-amber-50 px-5 py-3 opacity-85" style={{height: 'fit-content', width: 'fit-content'}} to={`/${previousPage}`} ref={closeButtonRef} onClick={() => {

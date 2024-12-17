@@ -4,9 +4,9 @@ import Navbar from "./scenes/navbar";
 import MobileNav from "./scenes/MobileNav";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Footer from "./scenes/footer";
+import LandingPageImage from "./scenes/LandingPageImage";
 import Home from "./pages/Home";
 import Investment from "./pages/Investment";
-import LandingPageImage from "./scenes/LandingPageImage";
 import BookMe from "./pages/BookMe";
 import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
@@ -45,7 +45,6 @@ function App() {
         {
           mobileNavIsOpen == true ?
             <MobileNav
-              selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
               previousPage={previousPage}
               isAboveSmallScreens={isAboveSmallScreens}
@@ -55,7 +54,6 @@ function App() {
           <>
           <Navbar
               selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
               setPreviousPage={setPreviousPage}
               isAboveSmallScreens={isAboveSmallScreens}
               isAboveMediumScreens={isAboveMediumScreens}
@@ -71,8 +69,8 @@ function App() {
               <Route path="/welcome" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
               <Route path="/investment" element={<Investment setSelectedPage={setSelectedPage} />} />
               <Route path="/bookme" element={<BookMe setSelectedPage={setSelectedPage} />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/faq" element={<FAQ setSelectedPage={setSelectedPage} />} />
+              <Route path="/pricing" element={<Pricing setSelectedPage={setSelectedPage} />} />
             </Routes>
             <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
           </>

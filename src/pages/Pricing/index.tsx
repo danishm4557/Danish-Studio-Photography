@@ -1,6 +1,13 @@
 import InvestmentTextBlock from "../Investment/investmentTextBlock"
 
-const Pricing = () => {
+type Props = {
+  setSelectedPage: ( value: string ) => void;
+}
+
+const Pricing = ({setSelectedPage}: Props) => {
+
+  setSelectedPage('pricing');
+
   return (
 	<InvestmentTextBlock />
   )

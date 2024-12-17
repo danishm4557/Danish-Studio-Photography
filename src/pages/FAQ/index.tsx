@@ -1,11 +1,18 @@
 import Faq from '../Investment/faq'
 
-const FAQ = () => {
-  return (
-	<div>
-		<Faq />
-	</div>
-  )
+type Props = {
+	setSelectedPage: (value: string) => void;
+}
+
+const FAQ = ({setSelectedPage}: Props) => {
+
+	setSelectedPage('faq');
+
+	return (
+		<div>
+			<Faq />
+		</div>
+	)
 }
 
 export default FAQ

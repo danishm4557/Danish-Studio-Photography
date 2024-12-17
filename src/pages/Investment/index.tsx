@@ -7,13 +7,16 @@ type Props = {
 }
 
 const Investment = ({setSelectedPage}: Props) => {
-  return (
-	<div>
-		<InvestmentTextBlock />
-		<TheProcess setSelectedPage={setSelectedPage}/>
-		<Faq />
-	</div>
-  )
+
+	setSelectedPage('investment');
+
+	return (
+		<div>
+			<InvestmentTextBlock />
+			<TheProcess />
+			<Faq />
+		</div>
+	)
 }
 
 export default Investment

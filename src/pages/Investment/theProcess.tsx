@@ -2,11 +2,7 @@ import processImage1 from '../../assets/theProcessImage1.jpg';
 import processImage2 from '../../assets/theProcessImage2.jpg';
 import { Link } from 'react-router-dom'
 
-type Props = {
-	setSelectedPage: (value: string) => void;
-}
-
-const TheProcess = ({setSelectedPage}: Props) => {
+const TheProcess = () => {
   return (
 	<div className="section-padding">
 		{/* 1st row */}
@@ -18,7 +14,7 @@ const TheProcess = ({setSelectedPage}: Props) => {
 						<div className="text-center font-light">STEP</div>
 						<div className="text-center anton-sc-regular italic text-4xl sm:text-5xl text-stone-800">01.</div>
 						<div className="text-sm leading-8 font-light">
-							Reach out <Link to="/bookme" onClick={() => setSelectedPage('bookeme')} className='border-b-2 hover:text-gray-600'>here</Link> to inquire! Give me ALLL the deets your envisioning for your big day and don’t skip out on anything! I love hearing about who you are, what you want for your big day, guest count, location and of course, your love story.
+							Reach out <Link to="/bookme" className='border-b-2 hover:text-gray-600'>HERE</Link> to inquire! Give me ALLL the deets your envisioning for your big day and don’t skip out on anything! I love hearing about who you are, what you want for your big day, guest count, location and of course, your love story.
 						</div>
 					</div>
 					<div className="flex flex-col gap-6 tracking-wider sm:w-1/3">
