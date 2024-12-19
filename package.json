@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.1.5",
     "flowbite-react": "^0.10.2",
     "framer-motion": "^11.5.4",
+    "lightgallery": "^2.8.2",
     "react": "^18.3.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-datepicker": "^7.5.0",

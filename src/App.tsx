@@ -10,6 +10,7 @@ import Investment from "./pages/Investment";
 import BookMe from "./pages/BookMe";
 import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
+import Gallery from "./pages/Gallery";
 
 
 
@@ -37,6 +38,9 @@ function App() {
           <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
         :
         selectedPage == 'bookme' ?
+          <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
+        :
+        selectedPage == 'gallery' ?
           <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
         :
           ''
@@ -71,6 +75,7 @@ function App() {
               <Route path="/bookme" element={<BookMe setSelectedPage={setSelectedPage} />} />
               <Route path="/faq" element={<FAQ setSelectedPage={setSelectedPage} />} />
               <Route path="/pricing" element={<Pricing setSelectedPage={setSelectedPage} />} />
+              <Route path="/gallery" element={<Gallery setSelectedPage={setSelectedPage} />} />
             </Routes>
             <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
           </>

@@ -114,6 +114,15 @@ body,
   background-size: cover !important;
 }
 
+#galleryLandingPageImageDiv {
+  background-image: url("../src/assets/galleryLandingPageImage.jpg");
+  min-height: 100vh !important;
+  /* Create the parallax scrolling effect */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 .navbar-container-position-absolute {
   position: absolute;
   top: 0;
@@ -161,6 +170,16 @@ body,
 
   #bookmeLandingPageImageDiv {
     background-image: url("../src/assets/bookmeLandingPageImage.jpg");
+    min-height: 100vh !important;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  #galleryLandingPageImageDiv {
+    background-image: url("../src/assets/galleryLandingPageImage.jpg");
     min-height: 100vh !important;
     /* Create the parallax scrolling effect */
     background-attachment: fixed !important;
