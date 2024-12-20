@@ -13,13 +13,11 @@ const Whatmyclientssay = () => {
 			if (review == 1) {
 				setReview(4);
 				reviewCount.current = 4;
-				// if (reviewRef.current) reviewRef.current.style.transform = `translate(-300%)`
 				if (reviewDivRef.current) reviewDivRef.current.style.transform = `translate(-${100*reviewCount.current-100}%)`
 			}
 			else {
 				setReview(review - 1);
 				reviewCount.current = reviewCount.current - 1;
-				// if (reviewRef.current) reviewRef.current.style.transform = `translate(100%)`
 				if (reviewDivRef.current) reviewDivRef.current.style.transform = `translate(-${100*reviewCount.current-100}%)`
 			}
 		}

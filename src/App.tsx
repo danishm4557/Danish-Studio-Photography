@@ -25,23 +25,25 @@ function App() {
   const [selectedPage, setSelectedPage] = useState<string>('home');
   const [previousPage, setPreviousPage] = useState<string>('home');
 
+  // open or automatically close mobile nav on screen resize to large
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState<boolean>(false);
 
-  // set nav color (black or white) based off homepage carousel or other pages' background image coloring
-  const [backgroundImageColor, setbackgroundImageColor] = useState('black');
+  // set nav links color on each page and also update with each image on BackgroundImageCarousel on home page
+  const [navLinksColor, setNavLinksColor] = useState('black');
 
 
   return(
     <div className="app">
+      {/* to display different landing page image on each of these pages */}
       {
         selectedPage == 'investment' ?
-          <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
+          <LandingPageImage selectedPage={selectedPage} />
         :
         selectedPage == 'bookme' ?
-          <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
+          <LandingPageImage selectedPage={selectedPage} />
         :
         selectedPage == 'gallery' ?
-          <LandingPageImage selectedPage={selectedPage} setbackgroundImageColor={setbackgroundImageColor} />
+          <LandingPageImage selectedPage={selectedPage} />
         :
           ''
       }
@@ -63,21 +65,25 @@ function App() {
               isAboveMediumScreens={isAboveMediumScreens}
               isAboveLargeScreens={isAboveLargeScreens}
               setMobileNavIsOpen={setMobileNavIsOpen}
-              backgroundImageColor={backgroundImageColor}
-              setbackgroundImageColor={setbackgroundImageColor}
+              navLinksColor={navLinksColor}
             />
             <Routes>
               {/* HOME PAGE */}
-              <Route path="/" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
-              <Route path="/home" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
-              <Route path="/welcome" element={<Home setSelectedPage={setSelectedPage} setbackgroundImageColor={setbackgroundImageColor} />} />
-              <Route path="/investment" element={<Investment setSelectedPage={setSelectedPage} />} />
-              <Route path="/bookme" element={<BookMe setSelectedPage={setSelectedPage} />} />
-              <Route path="/faq" element={<FAQ setSelectedPage={setSelectedPage} />} />
-              <Route path="/pricing" element={<Pricing setSelectedPage={setSelectedPage} />} />
-              <Route path="/gallery" element={<Gallery setSelectedPage={setSelectedPage} />} />
+              <Route path="/" element={<Home setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
+              <Route path="/home" element={<Home setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
+              <Route path="/welcome" element={<Home setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
+              {/* INVESTMENT PAGE */}
+              <Route path="/investment" element={<Investment setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
+              {/* BOOK ME PAGE */}
+              <Route path="/bookme" element={<BookMe setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
+              {/* FAQ PAGE */}
+              <Route path="/faq" element={<FAQ setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
+              {/* PRICING PAGE */}
+              <Route path="/pricing" element={<Pricing setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
+              {/* GALLERY PAGE */}
+              <Route path="/gallery" element={<Gallery setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
             </Routes>
-            <Footer setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} />
+            <Footer />
           </>
         }
       </BrowserRouter>

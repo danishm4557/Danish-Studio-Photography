@@ -11,21 +11,21 @@ import homePageCarouselImage9 from '../../assets/homePageCarouselImage9.jpeg';
 import { useEffect, useState } from "react";
 
 type Props = {
-  setbackgroundImageColor: (value: string) => void;
+  setNavLinksColor: (value: string) => void;
 }
 
-export function BackgroundImageCarousel({setbackgroundImageColor}: Props) {
+export function BackgroundImageCarousel({setNavLinksColor}: Props) {
 
   const [imageIndex, setImageIndex] = useState(1);
 
   useEffect(() => {
     if (imageIndex % 2 == 0) {
-      setbackgroundImageColor('black');
+      setNavLinksColor('white');
     }
     else {
-      setbackgroundImageColor('white');
+      setNavLinksColor('black');
     }
-  }, [imageIndex, setbackgroundImageColor])
+  })
 
   return (
     <div className="backgroundImageCarousell border-8 border-white">

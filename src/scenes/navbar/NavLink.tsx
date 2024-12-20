@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 type Props = {
   page:string;
   setMobileNavIsOpen:(value:boolean) => void;
-  backgroundImageColor:string;
+  navLinksColor:string;
 }
 
 const NavLink = ({
   page,
   setMobileNavIsOpen,
-  backgroundImageColor
+  navLinksColor
 }: Props) => {
 
   const lowerCasePage = page.toLowerCase().replace(/ /g, "");
@@ -20,7 +20,7 @@ const NavLink = ({
       onClick={() => {
         setMobileNavIsOpen(false);
       }}
-      className={`${backgroundImageColor == "black" ? "text-white" : "text-black"}`}
+      className={`text-${navLinksColor}`}
       >
         {page}
     </Link>

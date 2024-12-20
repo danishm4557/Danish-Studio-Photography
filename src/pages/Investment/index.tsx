@@ -4,11 +4,13 @@ import Faq from './faq';
 
 type Props = {
 	setSelectedPage: (value: string) => void;
+	setNavLinksColor: (value: string) => void;
 }
 
-const Investment = ({setSelectedPage}: Props) => {
+const Investment = ({setSelectedPage, setNavLinksColor}: Props) => {
 
 	setSelectedPage('investment');
+	setNavLinksColor('black');
 
 	return (
 		<div>

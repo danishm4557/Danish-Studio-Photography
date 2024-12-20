@@ -1,20 +1,8 @@
 type Props = {
 	selectedPage: string;
-	setbackgroundImageColor: (value: string) => void;
 }
 
-const LandingPageImage = ({selectedPage, setbackgroundImageColor}: Props) => {
-
-	if (selectedPage == 'investment') {
-		setbackgroundImageColor('black');
-	}
-	else if (selectedPage == 'bookme') {
-		setbackgroundImageColor('white');
-	}
-	else if (selectedPage == 'gallery') {
-		setbackgroundImageColor('white');
-	}
-
+const LandingPageImage = ({selectedPage}: Props) => {
 	return (
 		<>
 			{

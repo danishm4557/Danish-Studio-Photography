@@ -1,12 +1,7 @@
 import { Link } from 'react-router-dom';
 import LogoWhite from '../../assets/Danish-Studio-Logo-White.png';
 
-type Props = {
-	setSelectedPage:(value:string) => void;
-	setMobileNavIsOpen:(value:boolean) => void;
-}
-
-const Footer = ({setSelectedPage, setMobileNavIsOpen}: Props) => {
+const Footer = () => {
   return (
 	<>
 		<div className="flex flex-col sm:flex-row justify-between px-6 py-12 text-center text-white bg-stone-800 gap-x-[3rem] gap-y-[4.5rem]">
@@ -37,43 +32,19 @@ const Footer = ({setSelectedPage, setMobileNavIsOpen}: Props) => {
 				<div className="homemade-apple-regular text-2xl">Navigation</div>
 				<div className="flex gap-x-10 mx-auto">
 					<div className="flex flex-col gap-4">
-						<Link to="/about" onClick={() => {
-							setSelectedPage("about");
-							setMobileNavIsOpen(false);
-						}}>
+						<Link to="/about">
 								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">ABOUT</span>
 						</Link>
-						<Link to="/bookme" onClick={() => {
-							setSelectedPage("bookme");
-							setMobileNavIsOpen(false);
-						}}>
+						<Link to="/bookme">
 								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">BOOK ME</span>
-						</Link>
-						<Link to="/faq" onClick={() => {
-							setSelectedPage("faq");
-							setMobileNavIsOpen(false);
-						}}>
-								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">FAQ</span>
 						</Link>
 					</div>
 					<div className="flex flex-col gap-4">
-						<Link to="/terms-of-sevice" onClick={() => {
-							setSelectedPage('termofservice');
-							setMobileNavIsOpen(false);
-						}}>
-								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">TERMS OF SERVICE</span>
+						<Link to="/faq">
+								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">FAQ</span>
 						</Link>
-						<Link to={`/privacy-policy`} onClick={() => {
-							setSelectedPage('privacypolicy');
-							setMobileNavIsOpen(false);
-						}}>
-								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">PRIVACY POLICY</span>
-						</Link>
-						<Link to={`/blog`} onClick={() => {
-							setSelectedPage('blog');
-							setMobileNavIsOpen(false);
-						}}>
-								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">BLOG</span>
+						<Link to={`/gallery`}>
+								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">GALLERY</span>
 						</Link>
 					</div>
 				</div>

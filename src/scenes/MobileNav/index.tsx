@@ -37,18 +37,16 @@ const MobileNav = ({ setSelectedPage, previousPage, isAboveSmallScreens, setMobi
 		// custom insert for background image
 		style={{
 			backgroundImage: `url(${backgroundImage})`,
-			backgroundSize: 'cover', // Adjust as needed
-			backgroundPosition: 'center', // Adjust as needed
-			height: '100%', // need to set default height
-			minHeight: 'calc(100vh-0.4rem)', // Ensure the background covers the entire viewport except custom borders set in index.css
+			backgroundSize: 'cover',
+			backgroundPosition: 'center',
+			height: '100%',
+			minHeight: 'calc(100vh-0.4rem)',
 		  }}
 		>
 			<div className="flex justify-between">
 				<div className="flex flex-col gap-2">
-					{/* <MobileNavLink page="ABOUT" selectedPage={selectedPage} setSelectedPage={setSelectedPage} setMobileNavIsOpen={setMobileNavIsOpen} /> */}
 					<MobileNavLink page="WELCOME" setMobileNavIsOpen={setMobileNavIsOpen} />
 					<MobileNavLink page="INVESTMENT" setMobileNavIsOpen={setMobileNavIsOpen} />
-					{/* <MobileNavLink page="BLOG" setMobileNavIsOpen={setMobileNavIsOpen} /> */}
 					<MobileNavLink page="BOOK ME" setMobileNavIsOpen={setMobileNavIsOpen} />
 					<MobileNavLink page="GALLERY" setMobileNavIsOpen={setMobileNavIsOpen} />
 				</div>

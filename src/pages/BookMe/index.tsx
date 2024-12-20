@@ -6,11 +6,13 @@ import ContactForm from './contactForm';
 
 type Props = {
 	setSelectedPage: (value: string) => void;
+	setNavLinksColor: (value: string) => void;
 }
 
-const BookMe = ({setSelectedPage}:Props) => {
+const BookMe = ({setSelectedPage, setNavLinksColor}:Props) => {
 
 	setSelectedPage('bookme');
+	setNavLinksColor('black');
 
 	return (
 		<>

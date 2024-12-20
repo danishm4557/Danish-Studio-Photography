@@ -49,11 +49,13 @@ const allImage = [image1, image2, image3, image4, image5, image6, image7, image8
 
 type Props = {
 	setSelectedPage: (value: string) => void;
+	setNavLinksColor: (value: string) => void;
 }
 
-const GridGallery = ({setSelectedPage}: Props) => {
+const GridGallery = ({setSelectedPage, setNavLinksColor}: Props) => {
 
 	setSelectedPage('gallery');
+	setNavLinksColor('black');
 
   return (
 	<div className="flex flex-col gap-y-10 w-full section-padding"  style={{backgroundColor:'#f6f2ef'}}>
