@@ -68,6 +68,8 @@ function App() {
               navLinksColor={navLinksColor}
             />
             <Routes>
+              {/* 404 PAGE - AUTO REDIRECT TO HOME PAGE */}
+              <Route path="*" element={<Home setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
               {/* HOME PAGE */}
               <Route path="/" element={<Home setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
               <Route path="/home" element={<Home setSelectedPage={setSelectedPage} setNavLinksColor={setNavLinksColor} />} />
