@@ -29,7 +29,7 @@ export function BackgroundImageCarousel({setNavLinksColor}: Props) {
 
   return (
     <div className="backgroundImageCarousell border-8 border-white">
-      <Carousel slideInterval={5000} onSlideChange={(index) => setImageIndex(index)}>
+      <Carousel slideInterval={3000} onSlideChange={(index) => setImageIndex(index)}>
         <img src={homePageCarouselImage1} alt="Home Page Carousel Image 1" />
         <img src={homePageCarouselImage2} alt="Home Page Carousel Image 2" />
         <img src={homePageCarouselImage3} alt="Home Page Carousel Image 3" />
