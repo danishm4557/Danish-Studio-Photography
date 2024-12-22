@@ -54,13 +54,14 @@ type Props = {
 
 const GridGallery = ({setSelectedPage, setNavLinksColor}: Props) => {
 
+	window.scrollTo(0, 0)
 	setSelectedPage('gallery');
 	setNavLinksColor('black');
 
   return (
 	<div className="flex flex-col gap-y-10 w-full section-padding"  style={{backgroundColor:'#f6f2ef'}}>
 		<div className="homemade-apple-regular text-2xl md:text-3xl mt-5 text-stone-800">See My Work</div>
-		<LightGallery plugins={[lgZoom]} mode="lg-fade" elementClassNames="grid gap-5 grid-cols-2 md:grid-cols-4 pb-10">
+		<LightGallery plugins={[lgZoom]} mode="lg-fade" elementClassNames="grid gap-3 sm:gap-5 grid-cols-2 md:grid-cols-4 pb-10">
 			{
 				allImage.map((image, key) => [
 					<a data-lg-size="1406-1390"

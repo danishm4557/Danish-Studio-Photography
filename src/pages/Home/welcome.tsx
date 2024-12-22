@@ -1,4 +1,4 @@
-import danishProfileIntro from '../../assets/danish-profile-intro.png';
+import profilePicFlowersBackground from '../../assets/profilePicFlowersBackground.jpg'
 import { Link } from 'react-router-dom';
 import ZoomImage from '../../hooks/zoomImage';
 
@@ -16,12 +16,12 @@ const Welcome = () => {
 			</div>
 		</div>
 		<div className="section-padding flex flex-col sm:flex-row">
-			<div className="sm:w-1/2 mx-auto">
-				<ZoomImage src={danishProfileIntro} alt="Profile image of Danish" />
+			<div className="sm:w-1/2 mx-auto sm:py-6">
+				<ZoomImage src={profilePicFlowersBackground} alt="Profile image of Danish" />
 			</div>
 			<div className="sm:w-1/2 sm:p-6 whitespace-normal">
 				<div className="md:h-[100px]"></div>
-				<p className="karla-300 tracking-wide leading-7 mb-5">
+				<p className="karla-300 tracking-wide leading-7 mt-10 sm:mt-0 mb-5">
 					HEY GUYS,
 				</p>
 				<div className="anton-sc-regular italic text-4xl md:text-5xl mt-5 mb-10 tracking-wider leading-7">

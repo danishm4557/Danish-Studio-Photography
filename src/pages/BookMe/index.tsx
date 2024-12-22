@@ -11,6 +11,7 @@ type Props = {
 
 const BookMe = ({setSelectedPage, setNavLinksColor}:Props) => {
 
+	window.scrollTo(0, 0)
 	setSelectedPage('bookme');
 	setNavLinksColor('black');
 

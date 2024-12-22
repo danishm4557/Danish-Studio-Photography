@@ -9,6 +9,7 @@ type Props = {
 
 const Investment = ({setSelectedPage, setNavLinksColor}: Props) => {
 
+	window.scrollTo(0, 0)
 	setSelectedPage('investment');
 	setNavLinksColor('black');
 

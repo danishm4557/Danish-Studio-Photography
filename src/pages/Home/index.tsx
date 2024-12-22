@@ -11,6 +11,7 @@ type Props = {
 
 const Home = ({setSelectedPage, setNavLinksColor}:Props) => {
 
+  window.scrollTo(0, 0)
   setSelectedPage('home');
   setNavLinksColor('white');
 
