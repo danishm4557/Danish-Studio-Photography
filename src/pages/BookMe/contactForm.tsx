@@ -35,7 +35,7 @@ const ContactForm = () => {
 				top: 900,
 				left: 0,
 				behavior: "smooth",
-			  });
+			});
 		}
 	}
 
@@ -269,7 +269,7 @@ const ContactForm = () => {
 				whileInView={{ opacity: 1 }}
 				transition={{ duration: 0.8, delay: 0.6, ease: "linear" }} className="text-center flex flex-col gap-8">
 					<p className="anton-sc-regular italic text-4xl md:text-5xl text-stone-800 tracking-widest">FORM SUBMITTED!</p>
-					<p className="font-light leading-9 tracking-widest">Thank you! I've received your inquiry and will be getting in touch with your soon! Look out for my reply in your email. I'm so looking forward to discussing your big plans with you!</p>
+					<p className="font-light leading-9 tracking-widest">Thank you! I've received your inquiry and will be getting in touch with you soon! Look out for my reply in your email. I'm so looking forward to discussing your big plans with you!</p>
 				</motion.div>
 			 )
 		}

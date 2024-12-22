@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 import Navbar from "./scenes/navbar";
 import MobileNav from "./scenes/MobileNav";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -11,6 +12,7 @@ import BookMe from "./pages/BookMe";
 import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
 import Gallery from "./pages/Gallery";
+import favIcon from '../public/favicon.ico'
 
 
 
@@ -34,6 +36,14 @@ function App() {
 
   return(
     <div className="app">
+      <Helmet>
+        <title>Danish Studio Photography</title>
+        <meta property="og:title" content="Danish Studio Photography"></meta>
+        <meta name="description" content="HERE FOR LIFE'S FEEL GOOD MOMENTS" />
+        <meta property="og:description" content="HERE FOR LIFE'S FEEL GOOD MOMENTS"></meta>
+        <link rel="icon" type="image/png" href={favIcon} sizes="16x16" />
+        <meta property="og:image" content={favIcon} />
+      </Helmet>
       {/* to display different landing page image on each of these pages */}
       {
         selectedPage == 'investment' ?
