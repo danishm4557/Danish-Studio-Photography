@@ -56,7 +56,7 @@ const Faq = () => {
 
   return (
 	<div className="section-padding flex flex-col sm:flex-row gap-8">
-		<div className="flex flex-col sm:w-1/2 font-light tracking-wider">
+		<div className="flex flex-col sm:w-1/2 font-light karla-300 tracking-wider">
 			<div className="text-start homemade-apple-regular text-3xl my-12 font-light tracking-widest">FAQ</div>
 			<div className="flex flex-col">
 				<motion.div

@@ -7,7 +7,7 @@ const TheProcess = () => {
 	<div className="section-padding">
 		{/* 1st row */}
 		<div className="flex flex-col sm:flex-row gap-8">
-			<div className="sm:w-1/2">
+			<div className="sm:w-1/2 karla-300">
 				<div className="text-center homemade-apple-regular text-3xl my-12 font-light tracking-widest">The Process</div>
 				<div className="flex flex-col sm:flex-row gap-6">
 					<div className="flex flex-col gap-6 tracking-wider sm:w-1/3">
@@ -36,7 +36,7 @@ const TheProcess = () => {
 					<img className="pt-10 sm:py-10 md:w-3/4" src={processImage1} alt="Process Image 1 of couple after their wedding" />
 				</div>
 			</div>
-			<div className="sm:w-1/2">
+			<div className="sm:w-1/2 karla-300">
 				<img className="pb-10 sm:py-10 md:w-3/4" src={processImage2} alt="Process Image 1 of couple after their wedding" />
 				<div className="flex flex-col sm:flex-row gap-6">
 					<div className="flex flex-col gap-6 tracking-wider sm:w-1/3">

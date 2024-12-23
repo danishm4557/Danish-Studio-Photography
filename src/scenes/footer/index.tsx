@@ -8,7 +8,7 @@ const Footer = () => {
 			<div className="sm:w-2/12 align-center mx-auto my-auto">
 				<img src={LogoWhite} alt="Danish Studio Photography Logo" className="w-full border border-white p-[2px] rounded-full" style={{maxWidth: '175px'}}/>
 			</div>
-			<div className="xs:w-8/12 sm:w-4/12 max-sm:mx-auto flex flex-col justify-between gap-7 whitespace-pre-wrap karla-300">
+			<div className="xs:w-8/12 sm:w-4/12 max-sm:mx-auto flex flex-col justify-between gap-7 whitespace-pre-wrap karla-300 tracking-wide">
 				<div className="text-2xl">CHICAGO AND BEYOND</div>
 				<div className="text-lg leading-9">
 					Capturing feel good moments for the adventurous couples everywhere.
@@ -31,7 +31,7 @@ const Footer = () => {
 			<div className="sm:w-4/12 flex flex-col justify-start gap-9 karla-300">
 				<div className="homemade-apple-regular text-2xl">Navigation</div>
 				<div className="flex gap-x-10 mx-auto">
-					<div className="flex flex-col gap-4">
+					<div className="flex flex-col gap-4 karla-300 tracking-widest">
 						<Link to="/about">
 								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">ABOUT</span>
 						</Link>
@@ -39,7 +39,7 @@ const Footer = () => {
 								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">BOOK ME</span>
 						</Link>
 					</div>
-					<div className="flex flex-col gap-4">
+					<div className="flex flex-col gap-4 karla-300 tracking-widest">
 						<Link to="/faq">
 								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">FAQ</span>
 						</Link>

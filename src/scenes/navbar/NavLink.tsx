@@ -20,7 +20,7 @@ const NavLink = ({
       onClick={() => {
         setMobileNavIsOpen(false);
       }}
-      className={`text-${navLinksColor}`}
+      className={`text-${navLinksColor} font-medium`}
       >
         {page}
     </Link>

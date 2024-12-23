@@ -12,7 +12,7 @@ import BookMe from "./pages/BookMe";
 import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
 import Gallery from "./pages/Gallery";
-import favIcon from '../public/favicon.ico'
+import favIcon from './favicon.ico'
 
 
 

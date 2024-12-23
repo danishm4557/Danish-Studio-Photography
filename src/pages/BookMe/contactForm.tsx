@@ -46,7 +46,7 @@ const ContactForm = () => {
 	<div className="bg-white text-left py-10 px-5">
 		{
 			!formSubmitted ? (
-				<form ref={form} onSubmit={onSubmit} className="flex flex-col gap-8">
+				<form ref={form} onSubmit={onSubmit} className="flex flex-col gap-8 karla-300">
 					{/* EMAIL */}
 					<div id="emailInput">
 						<p className="text-sm pb-3">Email address <span className="text-red-700">*</span></p>
