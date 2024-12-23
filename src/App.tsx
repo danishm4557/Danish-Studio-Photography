@@ -41,8 +41,11 @@ function App() {
         <meta property="og:title" content="Danish Studio Photography"></meta>
         <meta name="description" content="HERE FOR LIFE'S FEEL GOOD MOMENTS" />
         <meta property="og:description" content="HERE FOR LIFE'S FEEL GOOD MOMENTS"></meta>
-        <link rel="icon" type="image/png" href={favIcon} sizes="16x16" />
+        <link rel="icon" type="image/png" href={favIcon} sizes="32x32" />
         <meta property="og:image" content={favIcon} />
+        <meta property="og:url" content="https://danishstudiophotography.com" />
+        <meta property="og:type" content="website" />
+        <link rel="apple-touch-icon" href={favIcon} />
       </Helmet>
       {/* to display different landing page image on each of these pages */}
       {
