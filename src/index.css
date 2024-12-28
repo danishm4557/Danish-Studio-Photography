@@ -43,8 +43,7 @@ body,
 
 #beautifulPlaceContainerDiv {
   background-image: url("../src/assets/beautifulPlaceImage.jpg");
-  min-height: 100% !important;
-  /* Create the parallax scrolling effect */
+  min-height: 75% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -53,7 +52,6 @@ body,
 #investmentLandingPageImageDiv {
   background-image: url("../src/assets/investmentLandingPageImage.jpg");
   min-height: 100vh !important;
-  /* Create the parallax scrolling effect */
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -62,7 +60,6 @@ body,
 #bookmeLandingPageImageDiv {
   background-image: url("../src/assets/bookmeLandingPageImage.jpg");
   min-height: 100vh !important;
-  /* Create the parallax scrolling effect */
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -71,7 +68,6 @@ body,
 #galleryLandingPageImageDiv {
   background-image: url("../src/assets/galleryLandingPageImage.jpg");
   min-height: 100vh !important;
-  /* Create the parallax scrolling effect */
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
