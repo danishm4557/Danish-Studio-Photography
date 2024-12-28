@@ -32,8 +32,8 @@ const Footer = () => {
 				<div className="homemade-apple-regular text-2xl">Navigation</div>
 				<div className="flex gap-x-10 mx-auto">
 					<div className="flex flex-col gap-4 karla-300 tracking-widest">
-						<Link to="/about">
-								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">ABOUT</span>
+						<Link to="/" onClick={() => window.scrollTo({top: 0, left: 0, behavior: "smooth"})}>
+								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">HOME</span>
 						</Link>
 						<Link to="/bookme">
 								<span className="border-b-2 hover:text-stone-300 hover:border-stone-300">BOOK ME</span>
